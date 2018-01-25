@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 0 0;
+  background-color: #EDEDED;
+}
+
+.slider {
+  height: 630px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 30px;
+  position: relative;
+  width: 1000px;
+}
+
+.slider .slide-radio {
+  position: absolute;
+  left: -99999px;
+}
+
+.slider #slide-radio-1:checked ~ .slider-wrapper { margin-left: 0%; }
+.slider #slide-radio-2:checked ~ .slider-wrapper { margin-left: -100%; }
+.slider #slide-radio-3:checked ~ .slider-wrapper { margin-left: -200%; }
+.slider #slide-radio-4:checked ~ .slider-wrapper { margin-left: -300%; }
+.slider #slide-radio-5:checked ~ .slider-wrapper { margin-left: -400%; }
+
+.slider #slide-radio-1:checked ~ .dots .dot-1 { opacity: 1; }
+.slider #slide-radio-2:checked ~ .dots .dot-2 { opacity: 1; }
+.slider #slide-radio-3:checked ~ .dots .dot-3 { opacity: 1; }
+.slider #slide-radio-4:checked ~ .dots .dot-4 { opacity: 1; }
+.slider #slide-radio-5:checked ~ .dots .dot-5 { opacity: 1; }
+
+.slider .slider-wrapper {
+  transition: margin-left 0.5s ease;
+  width: 5000px;
+}
+
+.slider .slider-wrapper .slide {
+  float: left;
+  position: relative;
+}
+
+.slider .slider-wrapper .slide .arrows {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.slider .slider-wrapper .slide .arrows .arrow {
+  background-color: rgba(255, 255, 255, 0.7);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  cursor: pointer;
+  display: block;
+  height: 80px;
+  pointer-events: all;
+  width: 40px;
+}
+
+.slider .slider-wrapper .slide .arrows .arrow.arrow-left {
+  background-image: url("arrow_left.png");
+}
+
+.slider .slider-wrapper .slide .arrows .arrow.arrow-right {
+  background-image: url("arrow_left.png");
+  transform: rotateY(180deg);
+}
+
+.slider .dots {
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.slider .dots .dot {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0.5;
+  opacity: 0.3;
+  padding: 5px;
+}

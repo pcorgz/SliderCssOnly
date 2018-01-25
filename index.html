@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Slider CSS!</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <div class="slider">
+    <input type="radio" class="slide-radio" id="slide-radio-1" name="slide-radio" checked>
+    <input type="radio" class="slide-radio" id="slide-radio-2" name="slide-radio">
+    <input type="radio" class="slide-radio" id="slide-radio-3" name="slide-radio">
+    <input type="radio" class="slide-radio" id="slide-radio-4" name="slide-radio">
+    <input type="radio" class="slide-radio" id="slide-radio-5" name="slide-radio">
+
+    <div class="slider-wrapper">
+      <div class="slide slide-1">
+        <img src="http://via.placeholder.com/1000x600/333333/aaaaaa">
+        <div class="arrows">
+          <label for="slide-radio-5" class="arrow arrow-left"></label>
+          <label for="slide-radio-2" class="arrow arrow-right"></label>
+        </div>
+      </div>
+      <div class="slide slide-2">
+        <img src="http://via.placeholder.com/1000x600/aaffaa/330033">
+        <div class="arrows">
+          <label for="slide-radio-1" class="arrow arrow-left"></label>
+          <label for="slide-radio-3" class="arrow arrow-right"></label>
+        </div>
+      </div>
+      <div class="slide slide-3">
+        <img src="http://via.placeholder.com/1000x600/333300/aaaaff">
+        <div class="arrows">
+          <label for="slide-radio-2" class="arrow arrow-left"></label>
+          <label for="slide-radio-4" class="arrow arrow-right"></label>
+        </div>
+      </div>
+      <div class="slide slide-4">
+        <img src="http://via.placeholder.com/1000x600/ffaaaa/003333">
+        <div class="arrows">
+          <label for="slide-radio-3" class="arrow arrow-left"></label>
+          <label for="slide-radio-5" class="arrow arrow-right"></label>
+        </div>
+      </div>
+      <div class="slide slide-5">
+        <img src="http://via.placeholder.com/1000x600/300300/affaff">
+        <div class="arrows">
+          <label for="slide-radio-4" class="arrow arrow-left"></label>
+          <label for="slide-radio-1" class="arrow arrow-right"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="dots">
+      <label for="slide-radio-1" class="dot dot-1">&bull;</label>
+      <label for="slide-radio-2" class="dot dot-2">&bull;</label>
+      <label for="slide-radio-3" class="dot dot-3">&bull;</label>
+      <label for="slide-radio-4" class="dot dot-4">&bull;</label>
+      <label for="slide-radio-5" class="dot dot-5">&bull;</label>
+    </div>
+  </div>
+
+</body>
+</html>
